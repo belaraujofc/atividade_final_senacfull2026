@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Banco</title>
 </head>
+
 <body>
     <h1> Mini Sistema Bancário</h1>
 
     <p> Saldo R$<span id = "saldo">0</span></p>
-    <input type="numero" id = "valor" placeholder="Digite um valor">
+    <input type="number" id = "valor" placeholder="Digite um valor">
 
     <br><br>
-    <button onclick="depositar()"></button>Depositar</body>
-    <button onclick="sacar()"></button>Sacar</body>
-    <button onclick="verExtrato()"></button>Ver Extrato</body>
+    <button onclick="depositar()"> Depositar</button>
+    <button onclick="sacar()"> Sacar</button>
+    <button onclick="verExtrato()"> Ver Extrato</button>
+    
+    <h3> Extrato </h3>
+    <div id="extratoTela"></div>
+
+    <script src="main.js"></script>
     
 </body>
 </html>
